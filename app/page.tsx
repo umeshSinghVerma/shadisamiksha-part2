@@ -221,7 +221,7 @@ export default function Home() {
                         data-acsb-now-navigable="false"
                         tabIndex={-1}
                       >
-                        די ג'יי לחתונה
+                        {`די ג'יי לחתונה`}
                       </a>
                     </li>
                     <li>
@@ -328,7 +328,7 @@ export default function Home() {
               </AccordionItem>
             </Accordion>
           </div>
-            <Link href={"/"} className='text-[#ca7f9d]'>פוסט קרדיטים כלות אורבניות</Link>
+          <Link href={"/"} className='text-[#ca7f9d]'>פוסט קרדיטים כלות אורבניות</Link>
         </div>
       )}
       <Footer />

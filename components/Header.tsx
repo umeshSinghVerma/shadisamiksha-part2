@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React, { useContext } from 'react'
 
 export default function Header() {
-    const {isOpenSideBar,setIsOpenSidebar}=useContext<any>(SidebarContext);
+    const { isOpenSideBar, setIsOpenSidebar } = useContext<any>(SidebarContext);
     return (
         <div className="header bg-white">
             <div className="w-full items-center hidden md:flex justify-between px-5  ">
@@ -30,7 +30,7 @@ export default function Header() {
             </div>
             <div className='flex md:hidden h-[98px] items-center justify-between pt-0 border border-b-[#e6e6e6]'>
                 <div className='h-full p-7'>
-                    <img src="/menu.svg" alt="" className='h-full mt-2' onClick={()=>{setIsOpenSidebar(!isOpenSideBar)}} />                   
+                    <img src="/menu.svg" alt="" className='h-full mt-2' onClick={() => { setIsOpenSidebar(!isOpenSideBar) }} />
                 </div>
                 <div className="logo-container h-full border border-[#e6e6e6] border-t-0 border-b-0 flex-grow justify-center items-center flex">
                     <div className="logo h-full">
@@ -271,7 +271,7 @@ export default function Header() {
                                     data-acsb-now-navigable="false"
                                     tabIndex={-1}
                                 >
-                                    די ג'יי לחתונה
+                                    {`די ג'יי לחתונה`}
                                 </a>
                             </li>
                             <li>
