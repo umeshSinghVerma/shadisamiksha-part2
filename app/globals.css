@@ -97,3 +97,9 @@
   width: 300px;
   z-index: 2;
 }
+.heading{
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin: 20px 0px;
+}
