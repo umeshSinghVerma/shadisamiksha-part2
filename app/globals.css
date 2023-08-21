@@ -2,26 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.section {
+  display: flex;
+  flex-direction: column;
+  margin: 43px 0px;
+  padding: 0px 20px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 12px;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.section-title {
+  color: #d67da1;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+.subsection {
+  margin-top: 20px;
+}
+.copyright {
+  display: flex;
+  font-size: 14px;
+  color: #979797;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.provider-login {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 185px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 33px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #c69ba3;
+}
+.social-networks {
+  margin-top: 10px;
+  font-size: 32px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  max-width: 250px;
+  width: 100%;
+  margin-right: 8px;
+}
+.social-networks a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.site-total-reviews-container {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto 50px;
+}
+.site-total-reviews {
+  direction: ltr;
+  font-size: 40px;
+  color: #c69ba3;
+  border-radius: 100px;
+  border: 2px solid #f0f0f0;
+  font-family: almoni-tzar, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-total-reviews > span {
+  border-left: 2px solid #f0f0f0;
+  padding: 6px 10px 0;
+  line-height: 58px;
 }
