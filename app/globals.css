@@ -80,3 +80,20 @@
   padding: 6px 10px 0;
   line-height: 58px;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent blackish color */
+  z-index: 1;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+}
