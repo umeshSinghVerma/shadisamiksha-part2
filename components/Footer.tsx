@@ -16,7 +16,7 @@ export default function Footer() {
                 <div className='font-bold text-xl'>המלצות של כלות אורבניות</div>
             </div>
 
-            <div className='flex w-screen h-full flex-col bg-[#f5f5f5] '>
+            <div className='flex h-full flex-col bg-[#f5f5f5] '>
                 <div className='flex justify-around flex-wrap gap-y-10 gap-x-5 text-sm'>
                     <div className="section">
                         <div className="section-title">
