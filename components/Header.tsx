@@ -54,7 +54,7 @@ export default function Header() {
             <div className='w-full hidden md:flex justify-around items-center font-extrabold p-2 my-6 text-lg border-b pb-6 border-b-[#e6e6e6]'>
                 <div className='group '>
                     <Link href={"/"}>מקום לאירוע</Link>
-                    <div className='hidden group-hover:flex absolute right-0 left-0 h-[350px] p-5 bg-white font-medium gap-5 border-t-2 mt-2 border-gray-200'>
+                    <div className='hidden hover:flex group-hover:flex absolute right-0 left-0 h-[350px] p-5 bg-white font-medium gap-5 border-t-2 border-gray-200'>
                         <div>
                             <ul>
                                 <li>
@@ -116,7 +116,7 @@ export default function Header() {
                 </div>
                 <div className='group '>
                     <Link href={"/"}>עיצוב והפקה</Link>
-                    <div className='hidden group-hover:flex absolute right-0 left-0 h-[350px] p-5 bg-white font-medium gap-5 border-t-2 mt-2 border-gray-200 justify-center'>
+                    <div className='hidden hover:flex group-hover:flex absolute right-0 left-0 h-[350px] p-5 bg-white font-medium gap-5 border-t-2 border-gray-200 justify-center'>
                         <ul >
                             <li>
                                 <a
@@ -199,7 +199,7 @@ export default function Header() {
                 <Link href={"/"}>מעצבי שמלות כלה</Link>
                 <div className='group'>
                     <Link href={"/"}>נותני שירות לחתונה</Link>
-                    <div className='hidden group-hover:flex absolute right-0 left-0 h-[350px] p-5 bg-white font-medium border-t-2 mt-2 border-gray-200 gap-72'>
+                    <div className='hidden hover:flex group-hover:flex absolute right-0 left-0 h-[350px] p-5 bg-white font-medium border-t-2 border-gray-200 gap-72'>
                         <div className='flex gap-2'>
                             <img
                                 className="h-full"
@@ -312,7 +312,7 @@ export default function Header() {
                 </div>
                 <div className='group'>
                     <Link href={"/"}>חתן וכלה</Link>
-                    <div className='hidden group-hover:flex absolute right-0 left-0 h-[350px] p-5 bg-white font-medium border-t-2 mt-2 border-gray-200 gap-72'>
+                    <div className='hidden group-hover:flex absolute right-0 left-0 h-[350px] p-5 bg-white font-medium border-t-2 hover:flex border-gray-200 gap-72'>
                         <div className="flex gap-2">
                             <img
                                 className="h-full"
