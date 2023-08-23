@@ -8,7 +8,13 @@ export default function Home() {
 
   return (
     <div>
-      <div className="sticky top-0"><Header /></div>
+      <div className="sticky top-0">
+        <Header />
+
+        <div>
+          working or not
+        </div>
+      </div>
       <Footer />
     </div>
   )
