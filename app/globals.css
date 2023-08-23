@@ -103,3 +103,29 @@
   text-decoration: underline;
   margin: 20px 0px;
 }
+.disclaimer_text{
+  padding: 27px 135px;
+  background-color: #c59ba3;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+.tag{
+  font-size: 16px;
+  padding: 2px 18px;
+  margin: 5px 0 5px 5px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #b2b2b2;
+  font-weight: 500;
+  border-radius: 100px;
+  width: min-content;
+  white-space: nowrap;
+  border: 1.8px solid #b2b2b2;
+}
+.date{
+  color: #b2b2b2;
+  max-width: 330px;
+  min-height: 7px;
+  font-size: 14px;
+}

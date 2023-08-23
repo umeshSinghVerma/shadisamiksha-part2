@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import SidebarContextProvider from '@/context/sidebarContext'
 import Sidebar from '@/components/Sidebar'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,8 +22,10 @@ export default function RootLayout({
     <html lang="en" dir='rtl'>
       <SidebarContextProvider>
         <body className={inter.className}>
+          <div className="sticky top-0"><Header /></div>
+          <Sidebar />
           {children}
-          <Sidebar/>
+          <Footer />
         </body>
       </SidebarContextProvider>
     </html>

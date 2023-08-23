@@ -8,8 +8,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="sticky top-0"><Header /></div>
-      <Footer />
+      this is the home page
     </div>
   )
 }
