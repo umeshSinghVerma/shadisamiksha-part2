@@ -38,9 +38,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="sticky top-0"><Header /></div>
       <Accessibility/>
-      <Footer />
     </div>
   )
 }
