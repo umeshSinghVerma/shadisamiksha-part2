@@ -22,6 +22,7 @@ export default function page() {
             readMore: "[קרא עוד...]"
         },
     ]
+
     return (
         <div>
             <ul
