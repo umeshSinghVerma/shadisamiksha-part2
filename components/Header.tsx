@@ -6,8 +6,8 @@ import React, { useContext } from 'react'
 export default function Header() {
     const { isOpenSideBar, setIsOpenSidebar } = useContext<any>(SidebarContext);
     return (
-        <div className="header bg-white">
-            <div className="w-full items-center hidden md:flex justify-between px-5  ">
+        <div className="bg-white header">
+            <div className="items-center justify-between hidden w-full px-5 md:flex ">
                 <div className="logo-container">
                     <div className="logo">
                         <a
@@ -24,7 +24,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="flex bg-[#f2f2f2] text-gray rounded-full text-xs px-5 w-[400px] h-[45px] items-center">
-                    <input type="text" placeholder='חפשו ממליצים על...' className='outline-none bg-transparent flex-grow' />
+                    <input type="text" placeholder='חפשו ממליצים על...' className='flex-grow bg-transparent outline-none' />
                     <img src="/searchicon.svg" alt="" className='h-[80%] mt-2' />
                 </div>
             </div>
@@ -33,7 +33,7 @@ export default function Header() {
                     <img src="/menu.svg" alt="" className='h-full mt-2' onClick={() => { setIsOpenSidebar(!isOpenSideBar) }} />
                 </div>
                 <div className="logo-container h-full border border-[#e6e6e6] border-t-0 border-b-0 flex-grow justify-center items-center flex">
-                    <div className="logo h-full">
+                    <div className="h-full logo">
                         <a
                             href="/"
                             aria-label="WedReviews המלצות וחוות דעת על אולמות וספקים לחתונה"
@@ -94,7 +94,7 @@ export default function Header() {
                         </div>
                         <div className="flex gap-2 ">
                             <img
-                                className=" h-full"
+                                className="h-full "
                                 src="https://www.wedreviews.co.il/addons/shared_addons/themes/wed_reviews_main_site_v2/img/top_menu_venue_location1.webp"
                                 title="מקום לאירוע"
                                 alt="מקום לאירוע"
