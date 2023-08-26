@@ -142,7 +142,7 @@ export default function page() {
                                                 </div>
                                                 <div className="hidden event-type-option custom-option open " data-id={21}>{`צילומי יח"צ`}
                                                 </div>
-                                                <div className="hidden event-type-option custom-option open " data-id={22}>
+                                                <div className="hidden event-type-option custom-option open " data-id={22} >
                                                     שיער ערב
                                                 </div>
                                                 <div className="hidden event-type-option custom-option open " data-id={23}>
