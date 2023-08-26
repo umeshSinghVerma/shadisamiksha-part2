@@ -10,7 +10,7 @@ export default function Header() {
             <div className="items-center justify-between hidden w-full px-5 md:flex ">
                 <div className="logo-container">
                     <div className="logo">
-                        <a
+                        <Link
                             href="/"
                             aria-label="WedReviews המלצות וחוות דעת על אולמות וספקים לחתונה"
                         >
@@ -20,7 +20,7 @@ export default function Header() {
                                 alt="WedReviews המלצות וחוות דעת על אולמות וספקים לחתונה"
                                 className='h-[91px]'
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="flex bg-[#f2f2f2] text-gray rounded-full text-xs px-5 w-[400px] h-[45px] items-center">
@@ -34,7 +34,7 @@ export default function Header() {
                 </div>
                 <div className="logo-container h-full border border-[#e6e6e6] border-t-0 border-b-0 flex-grow justify-center items-center flex">
                     <div className="h-full logo">
-                        <a
+                        <Link
                             href="/"
                             aria-label="WedReviews המלצות וחוות דעת על אולמות וספקים לחתונה"
                         >
@@ -44,7 +44,7 @@ export default function Header() {
                                 alt="WedReviews המלצות וחוות דעת על אולמות וספקים לחתונה"
                                 className='h-[98%]'
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className='h-full p-7 '>
@@ -58,37 +58,37 @@ export default function Header() {
                         <div>
                             <ul>
                                 <li>
-                                    <a href="153251/240731">גני אירועים במרכז</a>
+                                    <Link href="153251/240731">גני אירועים במרכז</Link>
                                 </li>
                                 <li>
-                                    <a href="153251/240732">גני אירועים בשרון</a>
+                                    <Link href="153251/240732">גני אירועים בשרון</Link>
                                 </li>
                                 <li>
-                                    <a href="153251/240733">גני אירועים בשפלה</a>
+                                    <Link href="153251/240733">גני אירועים בשפלה</Link>
                                 </li>
                                 <li>
-                                    <a href="153251/240734">גני אירועים בתל אביב</a>
+                                    <Link href="153251/240734">גני אירועים בתל אביב</Link>
                                 </li>
                                 <li>
-                                    <a href="153251/240735">גני אירועים בדרום</a>
+                                    <Link href="153251/240735">גני אירועים בדרום</Link>
                                 </li>
                                 <li>
-                                    <a href="153251/240736">גני אירועים בצפון</a>
+                                    <Link href="153251/240736">גני אירועים בצפון</Link>
                                 </li>
                                 <li>
-                                    <a href="153251/240737">גני אירועים בירושלים והסביבה</a>
+                                    <Link href="153251/240737">גני אירועים בירושלים והסביבה</Link>
                                 </li>
                                 <li>
-                                    <a href="153251/240738">גני אירועים בעמק חפר</a>
+                                    <Link href="153251/240738">גני אירועים בעמק חפר</Link>
                                 </li>
                                 <li>
-                                    <a href="153251/240739">גני אירועים בקיסריה</a>
+                                    <Link href="153251/240739">גני אירועים בקיסריה</Link>
                                 </li>
                                 <li>
-                                    <a href="153251/240740">מקומות לחתונה קטנה</a>
+                                    <Link href="153251/240740">מקומות לחתונה קטנה</Link>
                                 </li>
                                 <li>
-                                    <a href="153251/240741">אולמות אירועים במרכז</a>
+                                    <Link href="153251/240741">אולמות אירועים במרכז</Link>
                                 </li>
                             </ul>
                         </div>
@@ -119,7 +119,7 @@ export default function Header() {
                     <div className='hidden hover:flex group-hover:flex absolute right-0 left-0 h-[350px] p-5 bg-white font-medium gap-5 border-t-2 border-gray-200 justify-center'>
                         <ul >
                             <li>
-                                <a
+                                <Link
                                     href={"153269"}
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -127,10 +127,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     קייטרינג | שירותי בר
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href={"187802"}
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -138,10 +138,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     עיצוב אירועים | סידור פרחים
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href={"153447"}
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -149,10 +149,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     הפקת אירועים
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href={"187804"}
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -160,10 +160,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     ניהול אירוע | אישורי הגעה
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href={"153257"}
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -171,7 +171,7 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     הזמנות לחתונה | מיתוג
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <div
@@ -220,7 +220,7 @@ export default function Header() {
                         </div>
                         <ul>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/153263"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -228,10 +228,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     צילום סטילס
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/187806"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -239,10 +239,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     צילום ועריכת וידאו
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/153277"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -250,10 +250,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     איפור
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/153275"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -261,10 +261,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     עיצוב שיער
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/153265"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -272,10 +272,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     {`די ג'יי לחתונה`}
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/187807"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -283,10 +283,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     הופעות חיות
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/153255"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -294,10 +294,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     אטרקציות לחתונה
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/187805"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -305,7 +305,7 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     רב לחתונה
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -333,7 +333,7 @@ export default function Header() {
                         </div>
                         <ul>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/187793"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -341,10 +341,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     טבעות
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/187809"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -352,10 +352,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     ליל כלולות | התארגנות לחתונה
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/153253"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -363,10 +363,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     לחתן
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/187808"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -374,10 +374,10 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     תכשיטים ואקססוריז
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="event/category/187810"
                                     data-acsb-clickable="true"
                                     data-acsb-navigable="true"
@@ -385,7 +385,7 @@ export default function Header() {
                                     tabIndex={-1}
                                 >
                                     מסיבת רווקות
-                                </a>
+                                </Link>
                             </li>
                         </ul>
 
