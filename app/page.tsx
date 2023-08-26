@@ -94,13 +94,13 @@ export default function Home() {
 
         <div className="search-section" dir='ltr'>
           <img
-            style={{ verticalAlign: "middle" }}
+            style={{ verticalAlign: "middle", zIndex: "-2" }}
             src="https://www.wedreviews.co.il/addons/shared_addons/themes/wed_reviews_main_site_v2/img/wedreviews_header_bg.webp"
             className="desktop-only"
             alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
             title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
           />
-          <img style={{ verticalAlign: "middle" }}
+          <img style={{ verticalAlign: "middle", zIndex: "-2" }}
             src="https://www.wedreviews.co.il/addons/shared_addons/themes/wed_reviews_main_site_v2/img/wedreviews_header_bg_mobile.webp"
             className="mobile-only"
             alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
@@ -124,7 +124,7 @@ export default function Home() {
             </form>
             <div className="flex justify-center popular-searches" style={{ backgroundColor: '#d4d4d4' }}>
               <div>חיפושים פופולריים:</div>
-              <div className="links" >
+              <div className="links" style={{ flexDirection: "row" }}>
                 <a href="//provider/stories/154731"> הנחלה, </a>
                 <a href="provider/stories/157351"> בית על הים, </a>
                 <a href="provider/stories/259762"> לאגו, </a>

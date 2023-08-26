@@ -17,7 +17,7 @@ export default function page() {
                 </li>
             </ul>
             <div className='add-review-container provider-section'>
-                <div className='add-review'>
+                <div className='add-review' style={{ display: 'flex', justifyContent: 'center' }}>
                     <div className='left-side'>
                         <div className='survey'>
                             <form action="" id='add-review-form' acceptCharset='utf-8'>
@@ -273,7 +273,10 @@ export default function page() {
                                             ההמלצה ובאתר וודריביוז וכלות אורבניות.
                                         </div>
                                     </div>
-                                    <div className="submit-button-container">
+                                    <div className='error'>
+                                        {" "}
+                                    </div>
+                                    <div className="mb-6 submit-button-container">
                                         <input type="button" defaultValue="שגרו את ההמלצה" />
                                     </div>
 
