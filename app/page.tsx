@@ -148,7 +148,7 @@ export default function Home() {
           </div>
 
         </div>
-        <div className="promoted-text">
+        <div className="promoted-text"> 
           <div>{`
             בחירת אנשי המקצוע הכי טובים שיש לחתונה שלכם מתחילה בהמלצות! כאן תוכלו לחפש
             ולמצוא שלל חוות דעת אמיתיות של מתחתנים על אנשי ונשות המקצוע שאתם שוקלים לקחת
