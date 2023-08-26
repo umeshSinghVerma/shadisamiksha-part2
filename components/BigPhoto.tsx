@@ -1,16 +1,16 @@
 import React from 'react'
 
-export default function Photo({ imageUrl, coupleName, reviewSnippet, readMore, date }: any) {
+export default function BigPhoto({ imageUrl, coupleName, reviewSnippet, readMore, date }: any) {
     return (
-        <div className='w-[136px] md:w-[352px] text-sm m-2'>
+        <div className='w-[90%] text-sm m-2 max-h-[263px] h-full flex-grow'>
             <a
-                className="credits-post-link w-full flex flex-col"
+                className="credits-post-link w-full h-full flex flex-col"
                 href="/credits_post/138170" 
                 data-acsb-clickable="true"
                 data-acsb-navigable="true"
                 data-acsb-now-navigable="true"
             >
-                <div className="image-container h-[136px] w-[136px] md:h-[263px] md:w-[330px] overflow-hidden" data-acsb-overflower="true">
+                <div className="h-full w-full" data-acsb-overflower="true">
                     <img
                         src={imageUrl}
                         role="presentation"

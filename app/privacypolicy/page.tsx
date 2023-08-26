@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function page() {
@@ -285,7 +286,7 @@ export default function page() {
                                     {" "}
                                     לחצו לשליחת אימייל{" "}
                                 </span>
-                                <a href="mailto:or@wedreviews.co.il" className='text-[#00e] underline' >or@wedreviews.co.il</a>
+                                <span className='text-[#00e] underline' >or@wedreviews.co.il</span>
                             </a>{" "}
                             050421360
                         </div>

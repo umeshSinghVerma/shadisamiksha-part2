@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" dir='rtl'>
       <SidebarContextProvider>
         <body className={inter.className}>
-          <div className="sticky top-0"><Header /></div>
+          <div className="sticky top-0 z-50"><Header /></div>
           <Sidebar />
           {children}
           <Footer />
