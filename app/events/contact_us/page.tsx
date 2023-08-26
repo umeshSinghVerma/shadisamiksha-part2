@@ -34,7 +34,7 @@ export default function page() {
                                     <form
                                         id="contact_form"
                                         acceptCharset="utf-8"
-                                        className='flex flex-col'
+                                        className='flex flex-col '
                                     >
                                         <div style={{ height: "53px", marginBottom: "25px", backgroundColor: "#f2f2f2", borderRadius: "6px", maxWidth: "460px" }}></div>
                                         <div>
