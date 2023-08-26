@@ -25,9 +25,9 @@ export default function page() {
                                 <div className="info">
                                     <div>איך נוכל לעזור לכם?</div>
                                     <div>מלאו את הטופס ואנחנו כבר חוזרים אליכם.</div>
-                                    <div className="info_more">
+                                    <div className="info_more">{`
                                         לקבלת "גולשות לחתונה - הסקר המקיף להתנהגות כלות ברשת" השאירו פרטים
-                                        וציינו שאתם מעוניינים לקבל אותו.
+                                        וציינו שאתם מעוניינים לקבל אותו.`}
                                     </div>
                                 </div>
                                 <div className="form">

@@ -140,8 +140,7 @@ export default function page() {
                                                 <div className="hidden event-type-option custom-option open " data-id={20}>
                                                     צילומי אוכל ואווירה
                                                 </div>
-                                                <div className="hidden event-type-option custom-option open " data-id={21}>
-                                                    צילומי יח"צ
+                                                <div className="hidden event-type-option custom-option open " data-id={21}>{`צילומי יח"צ`}
                                                 </div>
                                                 <div className="hidden event-type-option custom-option open " data-id={22}>
                                                     שיער ערב
