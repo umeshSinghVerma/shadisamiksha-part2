@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Photo from '@/components/Photo'
 import Sidebar from '@/components/Sidebar'
 import { Input } from '@/components/ui/input'
+import Image from 'next/image'
 import Link from 'next/link'
 
 
@@ -176,13 +177,13 @@ export default function Home() {
 
         </div>
         <div className="promoted-text" style={{ marginTop: '4em' }}>
-          <div>
+          <div>{`
             בחירת אנשי המקצוע הכי טובים שיש לחתונה שלכם מתחילה בהמלצות! כאן תוכלו לחפש
             ולמצוא שלל חוות דעת אמיתיות של מתחתנים על אנשי ונשות המקצוע שאתם שוקלים לקחת
             לאירוע שלכם, כדי שתבחרו בסופו של דבר את הבסט שיש. מקומות לאירועים, צלמים,
             מעצבי שמלות כלה, מאפרות ומעצבי שיער, די.ג'ייז, שירותי עיצוב ועוד ועוד. פשוט
             חפשו לפי שם העסק או שם הספק/ית ותמצאו עשרות ביקורות של זוגות שהתחתנו,
-            ומספרים את כל הפרטים על כל מי שמעניין אתכם.
+            ומספרים את כל הפרטים על כל מי שמעניין אתכם.`}
           </div>
           <div>
             מתחתנים בשישי בצהרי יוני? או דווקא בחמישי בשיא החורף? את הסינון אתם יכולים
@@ -288,36 +289,26 @@ export default function Home() {
               })
             }
           </div>
-
-          <div>
-
-            <Link className="btn open-more-posts-button" href="credits_posts">
-              <button className="pink-button home-more-posts">
-                לפוסטים נוספים <i className="icon-down" title="לפוסטים נוספים" />
-              </button>
-            </Link>
-          </div>
-
-
-
-
-
+        </div>
+        <div className='w-full flex justify-end'>
+          <Link className="bg-[#de97b2] text-white px-8 py-2 rounded-full" href="credits_posts">
+            <button>
+              לפוסטים נוספים <i className="icon-down" title="לפוסטים נוספים" />
+            </button>
+          </Link>
         </div>
 
-        <div className="flex flex-col facebook-friends" style={{ backgroundColor: "#f6f6f6" }}>
-          <div className="text">בלחיצת כפתור תוכלו לגלות</div>
-          <div className="text">על מי החברים שלכם ממליצים</div>
-          <div className="text-wide">
+
+        <div className='flex items-center justify-center flex-col w-full bg-[#f6f6f6] py-[35px] gap-8 my-[35px]'>
+          <div className='text-2xl'>
             התחברו לפייסבוק וגלו על מי החברים שלכם ממליצים
           </div>
-          <div className="button" style={{ color: 'white' }}>
-            <Link href="provider/facebook_friends" rel="nofollow">
-              {" "}
-              <i className="icon-facebook-blue" title="לחצו להמלצות חברים" /> לחצו
-              להמלצות חברים{" "}
-            </Link>
-
-          </div>
+          <button className='rounded-3xl p-5 bg-[#1776f2] max-w-[270px]'>
+            <div className='flex items-center justify-center gap-2 text-white'>
+              <div><Image src={"/facebook.svg"} alt='facebook' width={30} height={30} /></div>
+              <p className='text-lg'> לחצו להמלצות חברים </p>
+            </div>
+          </button>
         </div>
 
 
