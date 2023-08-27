@@ -418,7 +418,7 @@ export default function page() {
                 }
             </div>
 
-            <div className='flex justify-center w-full m-5'>
+            <div className='flex justify-center m-5'>
                 <Link className="bg-[#de97b2] text-white px-8 py-2 rounded-full" href="credits_posts">
                     <button>
                         לפוסטים נוספים <i className="icon-down" title="לפוסטים נוספים" />
