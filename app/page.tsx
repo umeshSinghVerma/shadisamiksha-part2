@@ -107,10 +107,12 @@ export default function Home() {
             title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
           />
           <div className="search-form-popular-searches">
-            <form id="search-form-main" method="post" action="supplier/search" style={{ justifyContent: "center", alignItems: 'center', display: 'flex' }}>
-              <div className="flex searchable-section" style={{ width: '80%' }}>
-                <div className="flex items-center search-button-main" dir='rtl'>
-                  FIND <i className="icon-search" title="חפשו ממליצים על..." />
+            <form id="search-form-main" style={{ justifyContent: "center", alignItems: 'center', display: 'flex', }}>
+              <div className="flex searchable-section" style={{ width: '80%', height: '2.5em' }}>
+                <div className="flex items-center p-3 search-button-main" dir='rtl' style={{ backgroundColor: '#de97b2', color: '#fff' }}>
+                  FIND
+                  <img src="/searchiconwhite.svg" alt="" className='h-full ' />
+
                 </div>
                 <input
                   className="search-term-main search-bar"
@@ -118,6 +120,7 @@ export default function Home() {
                   aria-label="search"
                   placeholder="חפשו ממליצים על..."
                   autoComplete="off"
+                  dir='rtl'
                 />
 
               </div>
@@ -140,9 +143,12 @@ export default function Home() {
           </div>
           <div className="photo_credit" dir='rtl'>צילום: שי אשכנזי</div>
           <div className="add-review-button">
-            <a className="btn" href="supplier/add_review">
+            <a className="btn" href="supplier/add_review" style={{ display: 'flex', gap: '11px', alignItems: 'center' }}>
               <button className="pink-button">
-                <i className="icon-plus" title="הוסיפו המלצה" /> הוסיפו המלצה
+                {/* display: flex;
+    gap: 11px;
+    align-items: center; */}
+                <img src="/icons8-plus.svg" style={{ height: '33px' }} alt="" /> הוסיפו המלצה
               </button>
             </a>
           </div>
@@ -180,204 +186,11 @@ export default function Home() {
           </div>
           <div>זה הולך להיות כיף! שנתחיל?</div>
         </div>
-        <div className="categories-container">
+        <div className="categories-container" style={{ backgroundColor: '#f6f6f6', marginTop: '4em' }}>
           <div className="title-head">
             <h2>ספקים לחתונה - חיפוש לפי קטגוריה</h2>
           </div>
-          {/* <div className="categories" style={{ display: 'flex', margin: 'auto', flexWrap: 'wrap', width: '100%', justifyContent: 'center' }}>
-            <h3 className="category_icon">
-              <a href="event/category/153251">
-                {" "}
-                <i
-                  className="category-main-icon category-home-153251"
-                  title="מקום לאירוע"
-                />
-                <div className="category_name">מקום לאירוע</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/153265">
-                {" "}
-                <i
-                  className="category-main-icon category-home-153265"
-                  title="די ג'יי לחתונה"
-                />
-                <div className="category_name">די ג'יי לחתונה</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/153279">
-                {" "}
-                <i
-                  className="category-main-icon category-home-153279"
-                  title="שמלות כלה"
-                />
-                <div className="category_name">שמלות כלה</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/153263">
-                {" "}
-                <i
-                  className="category-main-icon category-home-153263"
-                  title="צילום סטילס"
-                />
-                <div className="category_name">צילום סטילס</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/153269">
-                {" "}
-                <i
-                  style={{ width: '50%', height: '150px' }}
-                  className="category-main-icon category-home-153269"
-                  title="קייטרינג | שירותי בר"
-                />
-                <div className="category_name">קייטרינג | שירותי בר</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/153277">
-                {" "}
-                <i className="category-main-icon category-home-153277" title="איפור" />
-                <div className="category_name">איפור</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/153275">
-                {" "}
-                <i
-                  className="category-main-icon category-home-153275"
-                  title="עיצוב שיער"
-                />
-                <div className="category_name">עיצוב שיער</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/187793">
-                {" "}
-                <i className="category-main-icon category-home-187793" title="טבעות" />
-                <div className="category_name">טבעות</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/153257">
-                {" "}
-                <i
-                  className="category-main-icon category-home-153257"
-                  title="הזמנות לחתונה | מיתוג"
-                />
-                <div className="category_name">הזמנות לחתונה | מיתוג</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/187802">
-                {" "}
-                <i
-                  className="category-main-icon category-home-187802"
-                  title="עיצוב אירועים | סידור פרחים"
-                />
-                <div className="category_name">עיצוב אירועים | סידור פרחים</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/187804">
-                {" "}
-                <i
-                  className="category-main-icon category-home-187804"
-                  title="ניהול אירוע | אישורי הגעה"
-                />
-                <div className="category_name">ניהול אירוע | אישורי הגעה</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/187805">
-                {" "}
-                <i
-                  className="category-main-icon category-home-187805"
-                  title="רב לחתונה"
-                />
-                <div className="category_name">רב לחתונה</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/187806">
-                {" "}
-                <i
-                  className="category-main-icon category-home-187806"
-                  title="צילום ועריכת וידאו"
-                />
-                <div className="category_name">צילום ועריכת וידאו</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/187807">
-                {" "}
-                <i
-                  className="category-main-icon category-home-187807"
-                  title="הופעות חיות"
-                />
-                <div className="category_name">הופעות חיות</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/187808">
-                {" "}
-                <i
-                  className="category-main-icon category-home-187808"
-                  title="תכשיטים ואקססוריז"
-                />
-                <div className="category_name">תכשיטים ואקססוריז</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/187809">
-                {" "}
-                <i
-                  className="category-main-icon category-home-187809"
-                  title="ליל כלולות | התארגנות לחתונה"
-                />
-                <div className="category_name">ליל כלולות | התארגנות לחתונה</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/153253">
-                {" "}
-                <i className="category-main-icon category-home-153253" title="לחתן" />
-                <div className="category_name">לחתן</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/153255">
-                {" "}
-                <i
-                  className="category-main-icon category-home-153255"
-                  title="אטרקציות לחתונה"
-                />
-                <div className="category_name">אטרקציות לחתונה</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/153447">
-                {" "}
-                <i
-                  className="category-main-icon category-home-153447"
-                  title="הפקת אירועים"
-                />
-                <div className="category_name">הפקת אירועים</div>
-              </a>
-            </h3>
-            <h3 className="category_icon">
-              <a href="event/category/187810">
-                {" "}
-                <i
-                  className="category-main-icon category-home-187810"
-                  title="מסיבת רווקות"
-                />
-                <div className="category_name">מסיבת רווקות</div>
-              </a>
-            </h3>
-          </div> */}
+
           <div className='flex flex-wrap'>
             {
               ImageCartoon.map((data, key) => {
@@ -393,6 +206,23 @@ export default function Home() {
               })
 
             }
+          </div>
+        </div>
+
+        <div className='flex flex-col gap-3 my-[25px]'>
+          <div className='flex mb-6 flex-col md:flex-row w-full justify-center items-center gap-2 h-[30px]'>
+            <div className='hidden h-full md:block'>
+              <img src="/urban_brides_logo.png" alt="" className='h-full' />
+            </div>
+            <div className='text-xl text-center md:text-2xl w-min whitespace-nowrap '>
+              <span className='hidden w-full text-2xl font-extrabold text-center md:inline'>
+                פוסט קרדיטים
+              </span>
+              בשיתוף הקבוצה של כלות אורבניות
+            </div>
+            <div className='h-full '>
+              <img src="/urban_brides_logo.png" alt="" className='h-full' />
+            </div>
           </div>
         </div>
         <div className="credits-posts">
@@ -426,68 +256,6 @@ export default function Home() {
               <span className="path5" />
             </i>
           </div>
-          {/* <div className="posts">
-            <a className="credits-post-link" href="credits_post/165034">
-              <div className="image-container">
-                <img
-                  src="https://www.wedreviews.co.il/uploads/default/files/credits_posts/213897953_10226234773878251_2231240478267296904_n_wed_thumb.jpg"
-                  className=""
-                  alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                  title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                  data-src="https://www.wedreviews.co.il/uploads/default/files/credits_posts/213897953_10226234773878251_2231240478267296904_n_wed_thumb.jpg"
-                  data-srcset="https://www.wedreviews.co.il/uploads/default/files/credits_posts/213897953_10226234773878251_2231240478267296904_n_wed_thumb.jpg"
-                  srcSet="https://www.wedreviews.co.il/uploads/default/files/credits_posts/213897953_10226234773878251_2231240478267296904_n_wed_thumb.jpg"
-                />
-              </div>
-              <div className="couple-name">ניצן וגלעד</div>
-              <div className="date">חתונה בגן פתוח</div>
-            </a>{" "}
-            <a className="credits-post-link" href="credits_post/129029">
-              <div className="image-container">
-                <img
-                  src="https://www.wedreviews.co.il/uploads/default/files/credits_posts/80889052_10221749269621091_7627648075569299456_o_wed_thumb.jpg"
-                  className=""
-                  alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                  title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                  data-src="https://www.wedreviews.co.il/uploads/default/files/credits_posts/80889052_10221749269621091_7627648075569299456_o_wed_thumb.jpg"
-                  data-srcset="https://www.wedreviews.co.il/uploads/default/files/credits_posts/80889052_10221749269621091_7627648075569299456_o_wed_thumb.jpg"
-                  srcSet="https://www.wedreviews.co.il/uploads/default/files/credits_posts/80889052_10221749269621091_7627648075569299456_o_wed_thumb.jpg"
-                />
-              </div>
-              <div className="couple-name">ניצן ורועי</div>
-              <div className="date">מקום התארגנות</div>
-            </a>{" "}
-            <a className="credits-post-link" href="credits_post/103949">
-              <div className="image-container">
-                <img
-                  src="https://www.wedreviews.co.il/uploads/default/files/credits_posts/74593549_10157830621794772_3455503559901052928_o_wed_thumb.jpg"
-                  className=""
-                  alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                  title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                  data-src="https://www.wedreviews.co.il/uploads/default/files/credits_posts/74593549_10157830621794772_3455503559901052928_o_wed_thumb.jpg"
-                  data-srcset="https://www.wedreviews.co.il/uploads/default/files/credits_posts/74593549_10157830621794772_3455503559901052928_o_wed_thumb.jpg"
-                  srcSet="https://www.wedreviews.co.il/uploads/default/files/credits_posts/74593549_10157830621794772_3455503559901052928_o_wed_thumb.jpg"
-                />
-              </div>
-              <div className="couple-name">קארין ואופיר</div>
-              <div className="date">מקום התארגנות</div>
-            </a>{" "}
-            <a className="credits-post-link" href="credits_post/161020">
-              <div className="image-container">
-                <img
-                  src="https://www.wedreviews.co.il/uploads/default/files/credits_posts/271869942_10228537670205990_4481067787529923997_n_wed_thumb.jpg"
-                  className=""
-                  alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                  title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                  data-src="https://www.wedreviews.co.il/uploads/default/files/credits_posts/271869942_10228537670205990_4481067787529923997_n_wed_thumb.jpg"
-                  data-srcset="https://www.wedreviews.co.il/uploads/default/files/credits_posts/271869942_10228537670205990_4481067787529923997_n_wed_thumb.jpg"
-                  srcSet="https://www.wedreviews.co.il/uploads/default/files/credits_posts/271869942_10228537670205990_4481067787529923997_n_wed_thumb.jpg"
-                />
-              </div>
-              <div className="couple-name">גילי ואיתי</div>
-              <div className="date">חתונה בגן פתוח</div>
-            </a>
-          </div> */}
           <div className='flex flex-wrap justify-center w-full mb-20'>
             {
               photoData.map((photo, key) => {
