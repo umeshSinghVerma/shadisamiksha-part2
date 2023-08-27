@@ -157,7 +157,7 @@ export default function Home() {
             <form id="search-form-main" style={{ justifyContent: "center", alignItems: 'center', display: 'flex', }}>
               <div className="flex searchable-section" style={{ width: '80%', height: '2.5em' }}>
                 <div className="flex items-center p-3 search-button-main" dir='rtl' style={{ backgroundColor: '#de97b2', color: '#fff' }}>
-                  FIND
+                  <span>FIND</span>
                   <img src="/searchiconwhite.svg" alt="" className='h-full ' />
 
                 </div>
