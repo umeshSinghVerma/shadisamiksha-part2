@@ -214,9 +214,9 @@ export default function page() {
                             <div className="search-form-popular-searches" style={{ bottom: "45%" }}>
                                 <form id="search-form-main" style={{ justifyContent: "center", alignItems: 'center', display: 'flex', }}>
                                     <div className="flex searchable-section" style={{ width: '80%', height: '2.5em' }}>
-                                        <button className="flex items-center p-3 search-button-main min-w-min" dir='rtl' style={{ backgroundColor: '#de97b2', color: '#fff' }}>
-                                            FIND
-                                            <img src="/searchiconwhite.svg" alt="" className='h-full ' />
+                                        <button className=" bg-[#de97b2] hover:bg-[#dc84a6] flex items-center p-3 search-button-main min-w-min" dir='rtl' style={{ color: '#fff' }}>
+                                            <span>FIND</span>
+                                            <img src="/searchiconwhite.svg" alt="" className='h-full w-[30px] ' />
 
                                         </button>
                                         <input

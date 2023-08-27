@@ -155,10 +155,10 @@ export default function Home() {
           />
           <div className="search-form-popular-searches">
             <form id="search-form-main" style={{ justifyContent: "center", alignItems: 'center', display: 'flex', }}>
-              <div className="flex searchable-section" style={{ width: '80%', height: '2.5em' }}>
-                <button className="flex items-center p-3 search-button-main min-w-min" dir='rtl' style={{ backgroundColor: '#de97b2', color: '#fff' }}>
+              <div className="flex  searchable-section" style={{ width: '80%', height: '2.5em' }}>
+                <button className="flex bg-[#de97b2] hover:bg-[#dc84a6]  items-center p-3 search-button-main min-w-min" dir='rtl' style={{ color: '#fff' }}>
                   <span>FIND</span>
-                  <img src="/searchiconwhite.svg" alt="" className='h-full ' />
+                  <img src="/searchiconwhite.svg" alt="" className='h-full w-[30px] ' />
 
                 </button>
                 <input
