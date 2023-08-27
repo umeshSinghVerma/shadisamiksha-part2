@@ -2429,6 +2429,22 @@ h6 {
   font-family: almoni-neue-regular, sans-serif;
 }
 
+@media (min-width: 750px) {
+  .top-talking-about {
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 500px) {
+  .top-talking-about {
+    padding-right: 50px;
+  }
+}
+
+.top-talking-about {
+  padding-right: 50px;
+}
+
 .credits-posts .btn .pink-button {
   margin: 30px auto 30px;
   text-align: center;
@@ -2444,4 +2460,79 @@ h6 {
   max-width: 202px;
   border: none;
   padding: 14px 20px;
+}
+
+@media (min-width: 750px) {
+  .latest_review_headline {
+    font-size: 22px;
+  }
+}
+
+.latest_review_headline {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+@media (min-width: 750px) {
+  .subsection {
+    background-color: #f6f6f6;
+    flex-flow: wrap-reverse;
+  }
+}
+
+@media (min-width: 750px) {
+  .subsection {
+    border-top: 1px dashed #000;
+    border-bottom: 1px dashed #000;
+  }
+}
+
+.subsection {
+  /* background-color: #d2d2d2; */
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding: 5px 20px 5px 0;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+@media (min-width: 750px) {
+  .top-talking-about {
+    padding-right: 30px;
+  }
+
+}
+
+@media (min-width: 500px) {
+  .top-talking-about {
+    padding-right: 50px;
+  }
+}
+
+.top-talking-about {
+  padding-right: 50px;
+}
+
+.top-talking-about img {
+  width: 95px;
+  height: 100px;
+}
+
+.subsection .facebook_pics {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 750px) {
+  .headline {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+}
+
+.headline {
+  background-color: #d49bb1;
+  text-align: center;
+  font-size: 22px;
 }

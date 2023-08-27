@@ -80,11 +80,10 @@ export default function Home() {
   ]
   const dataArray = [
     {
-      imgSrc: 'https://www.wedreviews.co.il/uploads/default/files/user.png',
+      imgSrc: '/homeImages/holder.png',
       reviewHeadline: 'החתונה של רז ומירית',
       reviewDate: '03.08.23',
-      reviewText:
-        'פגשנו את חן סוקו לאחר שלצערנו הדיגי שלנו נפצע בפיגוע. חן מיד קיבל אותנו...',
+      reviewText: "פגשנו את חן סוקו לאחר שלצערנו הדיגי שלנו נפצע בפיגוע. חן מיד קיבל אותנו בשמחה, נתן לנו הרגשה טובה שיש על מי לסמוך ושמר לנו את התאריך. לאורך כל הדרך עד החתונה היה קשוב לבקשות שלנו. ואז באירוע נתן הופעה מטורפת וניצח על הרחבה עד 03:0...",
       link: 'provider/stories/264091',
     },
     // Add more objects as needed
@@ -327,77 +326,69 @@ export default function Home() {
           <div className='title'>
             <span>המלצות אחרונות</span>
           </div>
-          <div className='flex'>
-            <div>
-              <img src="/homeImages/rightArrow.png" alt="" />
-            </div>
-            <div className="talking_about content">
-              {dataArray.map((data, index) => (
-                <div className="top-talking-about" key={index}>
-                  <img
-                    src={data.imgSrc}
-                    className=""
-                    alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                    title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                    data-srcset={data.imgSrc}
-                    data-src={data.imgSrc}
-                    srcSet={data.imgSrc}
-                  />
-                  <div className="replier_name" />
-                  <div className="latest_review_headline">
-                    {data.reviewHeadline} <span className="date">{data.reviewDate}</span>
-                  </div>
-                  <div className="review_answers">
-                    {`"${data.reviewText}"`}
-                    <div className="read_more_container">
-                      <a href={data.link}>קראו עוד</a>
+          <div className='flex' style={{ justifyContent: 'center', flexDirection: 'column' }}>
+
+            <div className="talking_about headline">מספרים על HYPE | הייפ</div>
+            <div className='flex' style={{ justifyContent: 'center', margin: '2em', gap: '1em' }}>
+
+              <div style={{ alignItems: 'center', display: 'flex' }}>
+                <img src="/homeImages/rightArrow.png" alt="" />
+              </div>
+              <div className="talking_about content" style={{ width: '90%' }}>
+                {dataArray.map((data, index) => (
+                  <div className="top-talking-about" key={index}>
+                    <img
+                      src={data.imgSrc}
+                      className="mt-2"
+                      alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
+                      title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
+                      data-srcset={data.imgSrc}
+                      data-src={data.imgSrc}
+                      srcSet={data.imgSrc}
+                    />
+                    <div className="mt-2 replier_name" />
+                    <div className="mt-2 latest_review_headline">
+                      {data.reviewHeadline} <span className="date">{data.reviewDate}</span>
+                    </div>
+                    <div className="review_answers" style={{ fontSize: '22px' }}>
+                      {`"${data.reviewText}"`}
+                      <div className="read_more_container">
+                        <a href={data.link}>קראו עוד</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
 
-              <div className="subsection">
-                <div className="more_photos desktop-only">
-                  {imageArray.map((imageUrl, index) => (
-                    <img
-                      key={index}
-                      src={imageUrl}
-                      className=""
-                      alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                      title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                      data-srcset={imageUrl}
-                      data-src={imageUrl}
-                      srcSet={imageUrl}
-                    />
-                  ))}
-                  <a href={dataArray[0].link}>
-                    <div className="text">{`ישנן ${dataArray.length} חוות דעת נוספות על נותן שירות זה`}</div>
-                  </a>
-                </div>
-                <div className="facebook_pics">
-                  {imageArray.map((imageUrl, index) => (
-                    <img
-                      key={index}
-                      src={imageUrl}
-                      className=""
-                      alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                      title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
-                      width={40}
-                      height={43}
-                      data-srcset={imageUrl}
-                      data-src={imageUrl}
-                      srcSet={imageUrl}
-                    />
-                  ))}
-                  <a href={dataArray[0].link}>
-                    <div className="text">{`קראו עוד ${dataArray.length} סיפורים`}</div>
-                  </a>
+                <div className="subsection">
+                  <div className="more_photos desktop-only">
+
+                    <a href={dataArray[0].link}>
+                      <div className="text">{`ישנן ${dataArray.length} חוות דעת נוספות על נותן שירות זה`}</div>
+                    </a>
+                  </div>
+                  <div className="facebook_pics">
+                    {imageArray.map((imageUrl, index) => (
+                      <img
+                        key={index}
+                        src={imageUrl}
+                        className=""
+                        alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
+                        title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
+                        width={40}
+                        height={43}
+                        data-srcset={imageUrl}
+                        data-src={imageUrl}
+                        srcSet={imageUrl}
+                      />
+                    ))}
+
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div>
-              <img src="/homeImages/leftArrow.png" alt="" />
+              <div style={{ alignItems: 'center', display: 'flex' }}>
+                <img src="/homeImages/leftArrow.png" alt="" />
+              </div>
             </div>
           </div>
 
