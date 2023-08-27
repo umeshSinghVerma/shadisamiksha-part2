@@ -8,17 +8,40 @@ export default function page() {
     return (
         <>
             <div className='main-container_contact_us'>
-                <ul className="breadcrumbs">
+
+
+                <ul
+                    className="flex"
+                    role="navigation"
+                    data-acsb-bc="true"
+                    aria-label="פירורי לחם"
+                    style={{ fontSize: "14px", color: "#989898" }}
+                >
                     <li>
-                        <a href="/">דף הבית</a>
+                        <Link
+                            href="/"
+                            data-acsb-clickable="true"
+                            data-acsb-navigable="true"
+                            data-acsb-now-navigable="true"
+                        >
+                            <span
+                                className="acsb-sr-only"
+                                data-acsb-sr-only="true"
+                                data-acsb-force-visible="true"
+                                aria-hidden="false"
+                                data-acsb-hidden="false"
+                            >
+                                דף הבית
+                            </span>
+                        </Link>
                     </li>
                     <li>
-                        <span>›</span> <span> צרו קשר </span>
+                        <span>›</span> <Link href={"#"}><span>  צרו קשר  </span></Link>
                     </li>
                 </ul>
 
                 <div className="general-page">
-                    <div className="contact-us">
+                    <div className="contact-us" style={{ padding: "0" }}>
                         <div className="contact_us_form">
                             <h1>צרו קשר</h1>
                             <div>
