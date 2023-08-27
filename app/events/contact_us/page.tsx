@@ -25,16 +25,16 @@ export default function page() {
                                 <div className="info">
                                     <div>איך נוכל לעזור לכם?</div>
                                     <div>מלאו את הטופס ואנחנו כבר חוזרים אליכם.</div>
-                                    <div className="info_more">
+                                    <div className="info_more">{`
                                         לקבלת "גולשות לחתונה - הסקר המקיף להתנהגות כלות ברשת" השאירו פרטים
-                                        וציינו שאתם מעוניינים לקבל אותו.
+                                        וציינו שאתם מעוניינים לקבל אותו.`}
                                     </div>
                                 </div>
                                 <div className="form">
                                     <form
                                         id="contact_form"
                                         acceptCharset="utf-8"
-                                        className='flex flex-col'
+                                        className='flex flex-col '
                                     >
                                         <div style={{ height: "53px", marginBottom: "25px", backgroundColor: "#f2f2f2", borderRadius: "6px", maxWidth: "460px" }}></div>
                                         <div>
