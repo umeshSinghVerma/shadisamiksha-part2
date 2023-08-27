@@ -1,10 +1,17 @@
+'use client'
 import { Input } from '@/components/ui/input'
 import React from 'react'
+import { Calendar } from "@/components/ui/calendar"
+import {
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
+} from "@/components/ui/popover"
 
 
 
 export default function page() {
-
+    const [date, setDate] = React.useState<Date | undefined>(new Date())
 
     return (
         <>
@@ -47,7 +54,7 @@ export default function page() {
                                         />
                                     </div>
                                     <div className='event-date-type'>
-                                        <div className="input-date form-input">
+                                        {/* <div className="input-date form-input">
                                             <Input
                                                 className="event-date"
                                                 name="event_date"
@@ -73,7 +80,20 @@ export default function page() {
                                                 style={{ position: "absolute", zIndex: 99 }}
                                             />
                                             <i className="icon-calender" />
-                                        </div>
+                                        </div> */}
+                                        {/* <Popover>
+                                            <PopoverTrigger>Open</PopoverTrigger>
+                                            <PopoverContent>
+                                                <Calendar
+                                                    mode="single"
+                                                    selected={date}
+                                                    onSelect={setDate}
+                                                    className="border rounded-md"
+                                                />
+                                            </PopoverContent>
+                                        </Popover> */}
+
+
                                         <Input className='event-type' name='event-type' type='hidden' value={3} />
                                         <div className='event-type-select-container custom-select-container '>
                                             <div className="event-type-select custom-select">

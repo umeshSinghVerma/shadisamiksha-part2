@@ -359,7 +359,13 @@ export default function page() {
                     })
                 }
             </div>
-
+            <div className='flex justify-center w-full mt-3'>
+                <Link className="bg-[#de97b2] text-white px-8 py-2 rounded-full" href="credits_posts">
+                    <button>
+                        לפוסטים נוספים <i className="icon-down" title="לפוסטים נוספים" />
+                    </button>
+                </Link>
+            </div>
             <div className="categories-container">
                 <div className="title-head">
                     <h2>ספקים לחתונה - חיפוש לפי קטגוריה</h2>
@@ -412,7 +418,13 @@ export default function page() {
                 }
             </div>
 
-
+            <div className='flex justify-center w-full m-5'>
+                <Link className="bg-[#de97b2] text-white px-8 py-2 rounded-full" href="credits_posts">
+                    <button>
+                        לפוסטים נוספים <i className="icon-down" title="לפוסטים נוספים" />
+                    </button>
+                </Link>
+            </div>
 
 
             <div className='flex items-center justify-center flex-col w-full bg-[#f6f6f6] py-[35px] gap-8 my-[35px]'>
