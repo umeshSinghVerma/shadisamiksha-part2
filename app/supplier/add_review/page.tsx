@@ -54,15 +54,26 @@ export default function page() {
                                         />
                                     </div>
                                     <div className='event-date-type'>
-                                        {/* <div className="input-date form-input">
-                                            <Input
+                                        <div className="input-date form-input">
+                                            {/* <Input
                                                 className="event-date"
                                                 name="event_date"
                                                 placeholder="תאריך"
                                                 id="datepicker"
                                                 readOnly={false}
                                                 autoComplete="off"
-                                            />
+                                            /> */}
+                                            <Popover>
+                                                <PopoverTrigger>Open</PopoverTrigger>
+                                                <PopoverContent>
+                                                    <Calendar
+                                                        mode="single"
+                                                        selected={date}
+                                                        onSelect={setDate}
+                                                        className=""
+                                                    />
+                                                </PopoverContent>
+                                            </Popover>
                                             <span
                                                 className="the-datepicker__deselect"
                                                 style={{ position: "absolute", visibility: "hidden" }}
@@ -80,18 +91,8 @@ export default function page() {
                                                 style={{ position: "absolute", zIndex: 99 }}
                                             />
                                             <i className="icon-calender" />
-                                        </div> */}
-                                        {/* <Popover>
-                                            <PopoverTrigger>Open</PopoverTrigger>
-                                            <PopoverContent>
-                                                <Calendar
-                                                    mode="single"
-                                                    selected={date}
-                                                    onSelect={setDate}
-                                                    className="border rounded-md"
-                                                />
-                                            </PopoverContent>
-                                        </Popover> */}
+                                        </div>
+
 
 
                                         <Input className='event-type' name='event-type' type='hidden' value={3} />
