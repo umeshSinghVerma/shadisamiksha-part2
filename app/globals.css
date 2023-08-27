@@ -2412,3 +2412,36 @@ h6 {
     bottom: 14%;
   }
 }
+
+.credits-posts .open-more-posts-button .pink-button {
+  font-family: almoni-neue-regular, sans-serif;
+  padding: 10px 20px;
+}
+
+@media (min-width: 750px) {
+  .credits-posts .open-more-posts-button .home-more-posts {
+    float: left;
+    margin-left: 23px;
+  }
+}
+
+.credits-posts .open-more-posts-button .home-more-posts {
+  font-family: almoni-neue-regular, sans-serif;
+}
+
+.credits-posts .btn .pink-button {
+  margin: 30px auto 30px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 33px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #c69ba3;
+  max-width: 150px;
+  width: 100%;
+  background-color: #de97b2;
+  max-width: 202px;
+  border: none;
+  padding: 14px 20px;
+}

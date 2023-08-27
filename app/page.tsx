@@ -10,22 +10,22 @@ import Link from 'next/link'
 export default function Home() {
   const photoData = [
     {
-      imageUrl: "https://www.wedreviews.co.il/uploads/default/files/credits_posts/81500110_10213009893317106_5526315848324612096_n_wed_thumb.jpg",
+      imageUrl: "/homeImages/a.jpg",
       coupleName: "ספיר ולידור",
       date: "מקום התארגנות"
     },
     {
-      imageUrl: "https://www.wedreviews.co.il/uploads/default/files/credits_posts/81500110_10213009893317106_5526315848324612096_n_wed_thumb.jpg",
+      imageUrl: "/homeImages/b.jpg",
       coupleName: "ספיר ולידור",
       date: "מקום התארגנות"
     },
     {
-      imageUrl: "https://www.wedreviews.co.il/uploads/default/files/credits_posts/81500110_10213009893317106_5526315848324612096_n_wed_thumb.jpg",
+      imageUrl: "/homeImages/c.jpg",
       coupleName: "ספיר ולידור",
       date: "מקום התארגנות"
     },
     {
-      imageUrl: "https://www.wedreviews.co.il/uploads/default/files/credits_posts/81500110_10213009893317106_5526315848324612096_n_wed_thumb.jpg",
+      imageUrl: "/homeImages/d.jpg",
       coupleName: "ספיר ולידור",
       date: "מקום התארגנות"
     },
@@ -77,11 +77,35 @@ export default function Home() {
       title: "צילום ועריכת וידאו"
     },
 
-
-
-
-
   ]
+  const dataArray = [
+    {
+      imgSrc: 'https://www.wedreviews.co.il/uploads/default/files/user.png',
+      reviewHeadline: 'החתונה של רז ומירית',
+      reviewDate: '03.08.23',
+      reviewText:
+        'פגשנו את חן סוקו לאחר שלצערנו הדיגי שלנו נפצע בפיגוע. חן מיד קיבל אותנו...',
+      link: 'provider/stories/264091',
+    },
+    // Add more objects as needed
+  ];
+
+  const imageArray = [
+    'https://www.wedreviews.co.il/uploads/default/files/repliers/6958396960859611.jpg',
+    'https://www.wedreviews.co.il/uploads/default/files/repliers/3215421032091121.jpg',
+    'https://www.wedreviews.co.il/uploads/default/files/repliers/10222191204224745.jpg',
+    'https://www.wedreviews.co.il/uploads/default/files/repliers/10230799804119573.jpg',
+    // Add more image URLs as needed
+  ];
+
+
+
+
+
+
+
+
+
   return (
     <>
       <div className='homepage-header'>
@@ -95,13 +119,13 @@ export default function Home() {
         <div className="search-section" dir='ltr'>
           <img
             style={{ verticalAlign: "middle", zIndex: "-2" }}
-            src="https://www.wedreviews.co.il/addons/shared_addons/themes/wed_reviews_main_site_v2/img/wedreviews_header_bg.webp"
+            src="/homeImages/wedreviews_header_bg.webp"
             className="desktop-only"
             alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
             title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
           />
           <img style={{ verticalAlign: "middle", zIndex: "-2" }}
-            src="https://www.wedreviews.co.il/addons/shared_addons/themes/wed_reviews_main_site_v2/img/wedreviews_header_bg_mobile.webp"
+            src="/homeImages/wedreviews_header_bg_mobile.webp"
             className="mobile-only"
             alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
             title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
@@ -128,29 +152,27 @@ export default function Home() {
             <div className="flex justify-center popular-searches" style={{ backgroundColor: '#d4d4d4' }}>
               <div>חיפושים פופולריים:</div>
               <div className="links" style={{ flexDirection: "row" }}>
-                <a href="//provider/stories/154731"> הנחלה, </a>
-                <a href="provider/stories/157351"> בית על הים, </a>
-                <a href="provider/stories/259762"> לאגו, </a>
-                <a href="provider/stories/154595"> האחוזה, </a>
-                <a href="provider/stories/260583"> טרמינל, </a>
-                <a href="provider/stories/154753"> הגבעה, </a>
-                <a href="provider/stories/249770"> ויה, </a>
-                <a href="provider/stories/258754"> אקו, </a>
-                <a href="provider/stories/259719"> היי אנד, </a>
-                <a href="provider/stories/259869"> אהובת הספן </a>
+                <Link href="//provider/stories/154731"> הנחלה, </Link>
+                <Link href="provider/stories/157351"> בית על הים, </Link>
+                <Link href="provider/stories/259762"> לאגו, </Link>
+                <Link href="provider/stories/154595"> האחוזה, </Link>
+                <Link href="provider/stories/260583"> טרמינל, </Link>
+                <Link href="provider/stories/154753"> הגבעה, </Link>
+                <Link href="provider/stories/249770"> ויה, </Link>
+                <Link href="provider/stories/258754"> אקו, </Link>
+                <Link href="provider/stories/259719"> היי אנד, </Link>
+                <Link href="provider/stories/259869"> אהובת הספן </Link>
               </div>
             </div>
           </div>
           <div className="photo_credit" dir='rtl'>צילום: שי אשכנזי</div>
           <div className="add-review-button">
-            <a className="btn" href="supplier/add_review" style={{ display: 'flex', gap: '11px', alignItems: 'center' }}>
-              <button className="pink-button">
-                {/* display: flex;
-    gap: 11px;
-    align-items: center; */}
-                <img src="/icons8-plus.svg" style={{ height: '33px' }} alt="" /> הוסיפו המלצה
+            <Link className="btn" href="supplier/add_review" style={{ display: 'flex', gap: '11px', alignItems: 'center' }}>
+              <button className="pink-button" style={{ display: 'flex', gap: '11px', alignItems: 'center' }}>
+
+                <img src="/icons8-plus.svg" style={{ height: '1em' }} alt="" /> הוסיפו המלצה
               </button>
-            </a>
+            </Link>
           </div>
 
         </div>
@@ -191,7 +213,7 @@ export default function Home() {
             <h2>ספקים לחתונה - חיפוש לפי קטגוריה</h2>
           </div>
 
-          <div className='flex flex-wrap'>
+          <div className='flex flex-wrap justify-center gap-4'>
             {
               ImageCartoon.map((data, key) => {
                 return (
@@ -268,14 +290,17 @@ export default function Home() {
             }
           </div>
 
+          <div>
+
+            <Link className="btn open-more-posts-button" href="credits_posts">
+              <button className="pink-button home-more-posts">
+                לפוסטים נוספים <i className="icon-down" title="לפוסטים נוספים" />
+              </button>
+            </Link>
+          </div>
 
 
 
-          <a className="btn open-more-posts-button" href="credits_posts">
-            <button className="pink-button home-more-posts">
-              לפוסטים נוספים <i className="icon-down" title="לפוסטים נוספים" />
-            </button>
-          </a>
 
 
         </div>
@@ -286,20 +311,98 @@ export default function Home() {
           <div className="text-wide">
             התחברו לפייסבוק וגלו על מי החברים שלכם ממליצים
           </div>
-          <div className="button">
-            <a href="provider/facebook_friends" rel="nofollow">
+          <div className="button" style={{ color: 'white' }}>
+            <Link href="provider/facebook_friends" rel="nofollow">
               {" "}
               <i className="icon-facebook-blue" title="לחצו להמלצות חברים" /> לחצו
               להמלצות חברים{" "}
-            </a>
+            </Link>
 
           </div>
         </div>
+
+
+
         <div className='latest-reviews'>
-          {/* <hr /> */}
           <div className='title'>
             <span>המלצות אחרונות</span>
           </div>
+          <div className='flex'>
+            <div>
+              <img src="/homeImages/rightArrow.png" alt="" />
+            </div>
+            <div className="talking_about content">
+              {dataArray.map((data, index) => (
+                <div className="top-talking-about" key={index}>
+                  <img
+                    src={data.imgSrc}
+                    className=""
+                    alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
+                    title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
+                    data-srcset={data.imgSrc}
+                    data-src={data.imgSrc}
+                    srcSet={data.imgSrc}
+                  />
+                  <div className="replier_name" />
+                  <div className="latest_review_headline">
+                    {data.reviewHeadline} <span className="date">{data.reviewDate}</span>
+                  </div>
+                  <div className="review_answers">
+                    {`"${data.reviewText}"`}
+                    <div className="read_more_container">
+                      <a href={data.link}>קראו עוד</a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+
+              <div className="subsection">
+                <div className="more_photos desktop-only">
+                  {imageArray.map((imageUrl, index) => (
+                    <img
+                      key={index}
+                      src={imageUrl}
+                      className=""
+                      alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
+                      title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
+                      data-srcset={imageUrl}
+                      data-src={imageUrl}
+                      srcSet={imageUrl}
+                    />
+                  ))}
+                  <a href={dataArray[0].link}>
+                    <div className="text">{`ישנן ${dataArray.length} חוות דעת נוספות על נותן שירות זה`}</div>
+                  </a>
+                </div>
+                <div className="facebook_pics">
+                  {imageArray.map((imageUrl, index) => (
+                    <img
+                      key={index}
+                      src={imageUrl}
+                      className=""
+                      alt="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
+                      title="WedReviews - חוות דעת, ביקורות, המלצות אמיתיות של זוגות מתחתנים"
+                      width={40}
+                      height={43}
+                      data-srcset={imageUrl}
+                      data-src={imageUrl}
+                      srcSet={imageUrl}
+                    />
+                  ))}
+                  <a href={dataArray[0].link}>
+                    <div className="text">{`קראו עוד ${dataArray.length} סיפורים`}</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <img src="/homeImages/leftArrow.png" alt="" />
+            </div>
+          </div>
+
+
+
         </div>
 
         <div className="need-to-know">
