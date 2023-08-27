@@ -2797,3 +2797,54 @@ h6 {
   text-align: center;
   font-size: 22px;
 }
+
+@media (min-width: 750px) {
+  .latest-reviews .title {
+    font-size: 26px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #d49bb1;
+    line-height: .1px;
+    margin: 10px 0 20px;
+    display: block;
+  }
+}
+
+.latest-reviews .title {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  .need-to-know .title {
+    font-size: 26px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #d49bb1;
+    line-height: .1px;
+    margin: 10px 0 20px;
+    display: block;
+  }
+}
+
+.need-to-know .title {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+@media (min-width: 750px) {
+  .need-to-know .title span {
+    position: relative;
+    line-height: 1px;
+  }
+}
+
+.need-to-know .title span {
+  background: #fff;
+  padding: 0 12px;
+}

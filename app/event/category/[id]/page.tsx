@@ -212,10 +212,12 @@ export default function page() {
                         />
                         <div>
                             <div className="search-form-popular-searches" style={{ bottom: "45%" }}>
-                                <form id="search-form-main" method="post" action="supplier/search" style={{ justifyContent: "center", alignItems: 'center', display: 'flex' }}>
-                                    <div className="flex searchable-section" style={{ width: '80%' }}>
-                                        <div className="flex items-center search-button-main" dir='rtl'>
-                                            FIND <i className="icon-search" title="חפשו ממליצים על..." />
+                                <form id="search-form-main" style={{ justifyContent: "center", alignItems: 'center', display: 'flex', }}>
+                                    <div className="flex searchable-section" style={{ width: '80%', height: '2.5em' }}>
+                                        <div className="flex items-center p-3 search-button-main" dir='rtl' style={{ backgroundColor: '#de97b2', color: '#fff' }}>
+                                            FIND
+                                            <img src="/searchiconwhite.svg" alt="" className='h-full ' />
+
                                         </div>
                                         <input
                                             className="search-term-main search-bar"
@@ -223,6 +225,7 @@ export default function page() {
                                             aria-label="search"
                                             placeholder="חפשו ממליצים על..."
                                             autoComplete="off"
+                                            dir='rtl'
                                         />
 
                                     </div>
@@ -230,16 +233,16 @@ export default function page() {
                                 <div className="flex justify-center popular-searches" style={{ backgroundColor: '#d4d4d4' }}>
                                     <div>חיפושים פופולריים:</div>
                                     <div className="links" style={{ flexDirection: "row" }}>
-                                        <Link href="//provider/stories/154731"> הנחלה, </Link>
-                                        <Link href="provider/stories/157351"> בית על הים, </Link>
-                                        <Link href="provider/stories/259762"> לאגו, </Link>
-                                        <Link href="provider/stories/154595"> האחוזה, </Link>
-                                        <Link href="provider/stories/260583"> טרמינל, </Link>
-                                        <Link href="provider/stories/154753"> הגבעה, </Link>
-                                        <Link href="provider/stories/249770"> ויה, </Link>
-                                        <Link href="provider/stories/258754"> אקו, </Link>
-                                        <Link href="provider/stories/259719"> היי אנד, </Link>
-                                        <Link href="provider/stories/259869"> אהובת הספן </Link>
+                                        <Link href="/provider/stories/154731"> הנחלה, </Link>
+                                        <Link href="/provider/stories/157351"> בית על הים, </Link>
+                                        <Link href="/provider/stories/259762"> לאגו, </Link>
+                                        <Link href="/provider/stories/154595"> האחוזה, </Link>
+                                        <Link href="/provider/stories/260583"> טרמינל, </Link>
+                                        <Link href="/provider/stories/154753"> הגבעה, </Link>
+                                        <Link href="/provider/stories/249770"> ויה, </Link>
+                                        <Link href="/provider/stories/258754"> אקו, </Link>
+                                        <Link href="/provider/stories/259719"> היי אנד, </Link>
+                                        <Link href="/provider/stories/259869"> אהובת הספן </Link>
                                     </div>
                                 </div>
                             </div>
@@ -262,13 +265,7 @@ export default function page() {
 
                             </div>
                         </div>
-                        <div className="add-review-button">
-                            <Link className="btn" href="supplier/add_review">
-                                <button className="pink-button">
-                                    <i className="icon-plus" title="הוסיפו המלצה" /> הוסיפו המלצה
-                                </button>
-                            </Link>
-                        </div>
+
                         <div>
 
                         </div>
@@ -278,28 +275,7 @@ export default function page() {
 
                 </div>
 
-                <div className="categories-container">
-                    <div className="title-head">
-                        <h2>ספקים לחתונה - חיפוש לפי קטגוריה</h2>
-                    </div>
 
-                    <div className='flex flex-wrap'>
-                        {
-                            ImageCartoon.map((data, key) => {
-                                return (
-                                    <div key={key} className='flex flex-col items-center justify-center'>
-                                        <div>
-                                            <img src={data.imgUrl} alt="hi" className='h-[115px] w-[115px]' />
-                                        </div>
-                                        <div style={{ fontSize: "medium" }}>{data.title}</div>
-
-                                    </div>
-                                )
-                            })
-
-                        }
-                    </div>
-                </div>
                 <div className='promoted-text'>
 
                     <div className="promoted-text-body">
@@ -383,8 +359,35 @@ export default function page() {
                     })
                 }
             </div>
+            <div className='flex justify-center w-full mt-3'>
+                <Link className="bg-[#de97b2] text-white px-8 py-2 rounded-full" href="credits_posts">
+                    <button>
+                        לפוסטים נוספים <i className="icon-down" title="לפוסטים נוספים" />
+                    </button>
+                </Link>
+            </div>
+            <div className="categories-container">
+                <div className="title-head">
+                    <h2>ספקים לחתונה - חיפוש לפי קטגוריה</h2>
+                </div>
 
+                <div className='flex flex-wrap'>
+                    {
+                        ImageCartoon.map((data, key) => {
+                            return (
+                                <div key={key} className='flex flex-col items-center justify-center'>
+                                    <div>
+                                        <img src={data.imgUrl} alt="hi" className='h-[115px] w-[115px]' />
+                                    </div>
+                                    <div style={{ fontSize: "medium" }}>{data.title}</div>
 
+                                </div>
+                            )
+                        })
+
+                    }
+                </div>
+            </div>
 
             <div className='flex flex-col gap-3 my-[25px]'>
                 <div className='flex mb-6 flex-col md:flex-row w-full justify-center items-center gap-2 h-[30px]'>
@@ -415,7 +418,13 @@ export default function page() {
                 }
             </div>
 
-
+            <div className='flex justify-center w-full m-5'>
+                <Link className="bg-[#de97b2] text-white px-8 py-2 rounded-full" href="credits_posts">
+                    <button>
+                        לפוסטים נוספים <i className="icon-down" title="לפוסטים נוספים" />
+                    </button>
+                </Link>
+            </div>
 
 
             <div className='flex items-center justify-center flex-col w-full bg-[#f6f6f6] py-[35px] gap-8 my-[35px]'>

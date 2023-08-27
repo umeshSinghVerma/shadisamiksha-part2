@@ -265,8 +265,7 @@ export default function page() {
                                                         className="hidden event-type-option custom-option"
                                                         data-id={21}
                                                     >
-                                                        צילומי יח"צ
-                                                    </div>
+                                                        {`צילומי יח"צ `}                                                    </div>
                                                     <div
                                                         className="hidden event-type-option custom-option"
                                                         data-id={22}

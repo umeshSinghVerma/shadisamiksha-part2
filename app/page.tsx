@@ -219,7 +219,9 @@ export default function Home() {
                 return (
                   <div key={key} className='flex flex-col items-center justify-center'>
                     <div>
-                      <img src={data.imgUrl} alt="hi" className='h-[115px] w-[115px]' />
+                      <Link href={"/event/category/123"}>
+                        <img src={data.imgUrl} alt="hi" className='h-[115px] w-[115px]' />
+                      </Link>
                     </div>
                     <div style={{ fontSize: "medium" }}>{data.title}</div>
 
@@ -290,9 +292,9 @@ export default function Home() {
             }
           </div>
         </div>
-        <div className='w-full flex justify-end'>
+        <div className='flex justify-end w-full'>
           <Link className="bg-[#de97b2] text-white px-8 py-2 rounded-full" href="credits_posts">
-            <button>
+            <button >
               לפוסטים נוספים <i className="icon-down" title="לפוסטים נוספים" />
             </button>
           </Link>
