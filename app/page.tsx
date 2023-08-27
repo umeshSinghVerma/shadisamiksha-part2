@@ -90,6 +90,7 @@ export default function Home() {
     // Add more objects as needed
   ];
 
+
   const imageArray = [
     'https://www.wedreviews.co.il/uploads/default/files/repliers/6958396960859611.jpg',
     'https://www.wedreviews.co.il/uploads/default/files/repliers/3215421032091121.jpg',
@@ -99,7 +100,29 @@ export default function Home() {
   ];
 
 
+  const homeLastarray: any = [
+    {
+      imageUrl: '/homeImages/homeLast1.jpg',
+      title: 'לגזור ולשמור',
+      desccription: 'רשימת השאלות שאתן חייבות לשאול את גן האירועים מעודכן ל2021'
+    },
+    {
+      imageUrl: '/homeImages/homeLast2.jpg',
+      title: 'כמה עולה חתונה',
+      desccription: 'סקר המחירים הגדול'
+    },
 
+    {
+      imageUrl: '/homeImages/homeLast3.jpg',
+      title: 'PLACE IT',
+      desccription: 'כך תבחרו גן אירועים מבלי לצאת מהבית!'
+    },
+    {
+      imageUrl: '/homeImages/homeLast4.jpg',
+      title: 'OMG, אתן מאורסות',
+      desccription: '5 שלבים חיוניים בתכנון החתונה שלכן'
+    },
+  ]
 
 
 
@@ -359,7 +382,7 @@ export default function Home() {
                       <div className="text">{`ישנן ${dataArray.length} חוות דעת נוספות על נותן שירות זה`}</div>
                     </a>
                   </div>
-                  <div className="facebook_pics">
+                  <div className="facebook_pics" style={{ gap: '1em' }}>
                     {imageArray.map((imageUrl, index) => (
                       <img
                         key={index}
@@ -395,6 +418,17 @@ export default function Home() {
             <span>חייבים להכיר</span>
           </div>
 
+        </div>
+        <div className='flex flex-wrap justify-center w-full mb-20'>
+          {
+            homeLastarray.map((photo: any, key: any) => {
+              return (
+                <div key={key}>
+                  <Photo imageUrl={photo.imageUrl} date={photo.title} coupleName={photo.desccription} />
+                </div>
+              )
+            })
+          }
         </div>
 
 
